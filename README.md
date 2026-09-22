@@ -21,6 +21,41 @@ one-click copying of the active terminal buffer.
 - Compact toolbar controls with hover descriptions
 - No external service or server required
 
+## Screenshots
+
+### Persistent MultiExec
+
+MultiExec automatically tiles open sessions and keeps broadcast input active
+while you move between terminal panes.
+
+![Tabby MultiExec enabled](docs/screenshots/03-multiexec-on.png)
+
+### Dynamic pane exclusion
+
+Individual terminals can be excluded from broadcast input while MultiExec
+remains active.
+
+![Dynamic pane exclusion](docs/screenshots/04-exclude-pane.png)
+
+### Tiled sessions without broadcast
+
+Tile your sessions for visibility without enabling MultiExec.
+
+![Tiled sessions with MultiExec off](docs/screenshots/02-tiled-off.png)
+
+### Normal tabbed workflow
+
+Return the tiled sessions to their original tab order at any time.
+
+![Normal Tabby tabs](docs/screenshots/01-tabs-view.png)
+
+### Copy complete terminal scrollback
+
+The Copy control places the complete scrollback of the focused terminal onto
+the system clipboard.
+
+![Copy terminal to clipboard](docs/screenshots/05-copy-terminal.png)
+
 ## Installation
 
 Open Tabby and navigate to:
