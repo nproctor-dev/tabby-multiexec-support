@@ -1,0 +1,27 @@
+Tabby MultiExec Freeware License
+
+Copyright (c) 2026 Neil Proctor. All rights reserved.
+
+Permission is granted to individuals and organizations to install and use
+the unmodified Tabby MultiExec package, without charge, for personal,
+educational, and internal commercial purposes.
+
+This license does not grant permission to:
+
+- redistribute or republish the package as another product;
+- sell, sublicense, rent, or commercially redistribute the package;
+- distribute modified versions or derivative packages;
+- represent the package as your own work; or
+- use the package name or branding to imply endorsement.
+
+The software is provided "AS IS", without warranty of any kind, express
+or implied, including but not limited to warranties of merchantability,
+fitness for a particular purpose, and noninfringement.
+
+In no event shall the copyright holder be liable for any claim, damages,
+or other liability arising from the software or its use.
+
+The copyright holder may offer different licensing terms separately.
+
+This license governs the distributed Tabby MultiExec package only.
+No source-code license is granted.
