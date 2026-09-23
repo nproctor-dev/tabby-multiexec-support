@@ -134,7 +134,11 @@ https://www.npmjs.com/package/tabby-multiexec
 
 Current release:
 
-**1.0.0**
+**1.0.3 — September 23, 2026**
+
+Release history and patch notes:
+
+[CHANGELOG.md](CHANGELOG.md)
 
 ## Issues and feature requests
 
@@ -169,39 +173,3 @@ The development source repository is private.
 Tabby MultiExec is free for personal, educational, and internal commercial use.
 
 See `LICENSE.txt` for the complete license terms.
-
-## Screenshots
-
-### Normal tabbed workflow
-
-Standard Tabby session layout before tiling or enabling MultiExec.
-
-![Normal tabbed workflow](docs/screenshots/01-tabs-view.png)
-
-### Tiled sessions with MultiExec OFF
-
-Sessions can be tiled together without broadcasting input. MultiExec remains
-independent of the tiled layout.
-
-![Tiled sessions with MultiExec OFF](docs/screenshots/02-tiled-off.png)
-
-### Persistent MultiExec
-
-MultiExec keeps broadcast input enabled while moving between terminal panes.
-Each pane displays the current MultiExec state.
-
-![Persistent MultiExec](docs/screenshots/03-multiexec-on.png)
-
-### Dynamic pane exclusion
-
-Individual terminals can be excluded while MultiExec remains active. Exclusion
-changes take effect immediately without stopping or restarting broadcast mode.
-
-![Dynamic pane exclusion](docs/screenshots/04-exclude-pane.png)
-
-### Copy complete terminal scrollback
-
-The Copy control places the complete scrollback of the focused terminal onto
-the system clipboard.
-
-![Copy terminal to clipboard](docs/screenshots/05-copy-terminal.png)
