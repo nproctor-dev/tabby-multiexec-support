@@ -119,9 +119,9 @@ focused terminal to the system clipboard.
 
 ## Compatibility
 
-Initial release tested with:
+Validated with:
 
-- Tabby 1.0.235
+- Tabby 1.0.235–1.0.236
 - Linux / Kubuntu
 - X11/XWayland-hosted Tabby
 
