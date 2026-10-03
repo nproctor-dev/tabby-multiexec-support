@@ -6,7 +6,7 @@ Tabby MultiExec extends Tabby's tiled-terminal workflow with persistent
 broadcast input, dynamic per-terminal exclusions, layout controls, and
 one-click copying of the active terminal buffer.
 
-**Project website:** https://pttsllc.com/projects/tabby-multiexec/
+**Project website:** https://pttsllc.com/software/tabby-multiexec/
 
 ## Features
 
