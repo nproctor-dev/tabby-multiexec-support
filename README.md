@@ -1,10 +1,20 @@
 # Tabby MultiExec
 
-Persistent, selective MultiExec for the Tabby terminal.
+Tabby MultiExec is a feature pack that builds on Tabby's existing MultiExec
+capability and makes multi-session terminal workflows easier to manage. It adds
+persistent broadcast input while switching between terminal panes, simple
+on-screen controls, dynamic per-pane exclusions, tiled-session management, and
+one-click copying of the active terminal's full scrollback to the clipboard.
 
-Tabby MultiExec extends Tabby's tiled-terminal workflow with persistent
-broadcast input, dynamic per-terminal exclusions, layout controls, and
-one-click copying of the active terminal buffer.
+If you work with multiple SSH sessions or local terminals and want to send the
+same input across several sessions at once, Tabby MultiExec extends Tabby's
+built-in MultiExec workflow with additional control and persistence. Users
+familiar with MobaXterm's MultiExec / Multi-execution workflow will recognize
+the general multi-session terminal broadcast concept, while Tabby MultiExec
+remains designed specifically around Tabby's own terminal workflow.
+
+Tabby MultiExec is an independent plugin and is not affiliated with MobaXterm
+or Mobatek.
 
 **Project website:** https://pttsllc.com/software/tabby-multiexec/
 
