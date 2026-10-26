@@ -13,8 +13,9 @@ familiar with MobaXterm's MultiExec / Multi-execution workflow will recognize
 the general multi-session terminal broadcast concept, while Tabby MultiExec
 remains designed specifically around Tabby's own terminal workflow.
 
-Tabby MultiExec is an independent plugin and is not affiliated with MobaXterm
-or Mobatek.
+Tabby MultiExec is an independently developed plugin. MobaXterm is a Mobatek
+product referenced only to describe a comparable workflow. Tabby MultiExec is
+not affiliated with, sponsored by, or endorsed by Mobatek or MobaXterm.
 
 **Project website:** https://pttsllc.com/software/tabby-multiexec/
 
