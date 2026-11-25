@@ -1,15 +1,23 @@
 # Tabby MultiExec
 
+**One keyboard. Multiple terminals. Complete control.**
+
 Tabby MultiExec is a feature pack that builds on Tabby's existing MultiExec
 capability and makes multi-session terminal workflows easier to manage. It adds
-persistent broadcast input while switching between terminal panes, simple
-on-screen controls, dynamic per-pane exclusions, tiled-session management, and
-one-click copying of the active terminal's full scrollback to the clipboard.
+persistent broadcast input while switching between terminal panes, intuitive
+toolbar controls, dynamic per-terminal exclusions, flexible tiled and tabbed
+layouts, and one-click copying of the active terminal's complete scrollback to
+the clipboard.
+
+Version 1.0.4 introduces redesigned toolbar icons, dedicated per-terminal
+Exclude controls, improved visual status indicators, enhanced paste handling,
+clipboard confirmation notifications, and clean plain-text clipboard output
+that preserves indentation, Unicode characters, and internal formatting.
 
 If you work with multiple SSH sessions or local terminals and want to send the
 same input across several sessions at once, Tabby MultiExec extends Tabby's
-built-in MultiExec workflow with additional control and persistence. Users
-familiar with MobaXterm's MultiExec / Multi-execution workflow will recognize
+built-in MultiExec workflow with additional control, flexibility, and persistence.
+Users familiar with MobaXterm's MultiExec / Multi-execution workflow will recognize
 the general multi-session terminal broadcast concept, while Tabby MultiExec
 remains designed specifically around Tabby's own terminal workflow.
 
@@ -21,76 +29,55 @@ not affiliated with, sponsored by, or endorsed by Mobatek or MobaXterm.
 
 ## Features
 
-- Persistent MultiExec mode
-- MultiExec stays enabled when changing the focused terminal
-- Dynamic per-pane **Exclude** control
-- Exclusions can be changed while MultiExec is running
-- MultiExec automatically tiles open sessions when needed
-- Tile sessions without enabling MultiExec
-- Disable MultiExec while remaining in tiled view
-- Return tiled sessions to their original tab order
-- Explicit MultiExec ON/OFF state in every pane
-- One-click copy of the focused terminal's complete scrollback
-- Compact toolbar controls with hover descriptions
-- No external service or server required
+- Persistent MultiExec mode, even when changing the focused terminal.
+- Redesigned toolbar icons: **MultiExec**, **Tabs**, **Tiles**, **Copy**.
+- Green MultiExec indicator when broadcasting is enabled.
+- Dedicated per-terminal **Exclude** footer controls with amber exclusion indicators.
+- Exclusions can be changed while broadcasting is active.
+- Automatic tiling when enabling MultiExec.
+- Independent tiling and broadcasting controls.
+- Restore sessions to their original tab order, with normal input confined to the selected tab.
+- Single confirmation for multiline paste during MultiExec.
+- One-click copying of the focused terminal's complete scrollback as plain text.
+- Clipboard confirmation directly beneath the Copy icon.
+- Clean clipboard output without unnecessary trailing blank lines, preserving indentation, Unicode, and internal blank lines.
+- No external service or server required.
 
 ## Screenshots
 
+### Toolbar controls and key features
+
+Four controls provide persistent broadcasting, tab restoration, independent tiling, and complete terminal copying.
+
+![Toolbar controls and key features](docs/screenshots/01-multiexec-toolbar-and-features.png)
+
 ### Persistent MultiExec
 
-MultiExec automatically tiles open sessions and keeps broadcast input active
-while you move between terminal panes.
+Broadcast across six terminal sessions while changing the focused terminal.
 
-![Tabby MultiExec enabled](docs/screenshots/03-multiexec-on.png)
+![Persistent MultiExec](docs/screenshots/02-multiexec-active-six-terminals.png)
 
-### Dynamic pane exclusion
+### Dynamic terminal exclusion
 
-Individual terminals can be excluded from broadcast input while MultiExec
-remains active.
+Use the Exclude footer to remove individual terminals from broadcast input. Amber identifies excluded terminals.
 
-![Dynamic pane exclusion](docs/screenshots/04-exclude-pane.png)
+![Dynamic terminal exclusion](docs/screenshots/03-multiexec-selective-exclusion.png)
 
 ### Tiled sessions without broadcast
 
-Tile your sessions for visibility without enabling MultiExec.
+Keep sessions tiled for visibility with MultiExec disabled.
 
-![Tiled sessions with MultiExec off](docs/screenshots/02-tiled-off.png)
-
-### Normal tabbed workflow
-
-Return the tiled sessions to their original tab order at any time.
-
-![Normal Tabby tabs](docs/screenshots/01-tabs-view.png)
-
-### Copy complete terminal scrollback
-
-The Copy control places the complete scrollback of the focused terminal onto
-the system clipboard.
-
-![Copy terminal to clipboard](docs/screenshots/05-copy-terminal.png)
+![Tiled sessions without broadcast](docs/screenshots/04-tiles-with-multiexec-disabled.png)
 
 ## Installation
 
-Open Tabby and navigate to:
+1. Open Tabby and navigate to **Settings → Plugins**.
+2. Search for `multiexec`.
+3. Install Tabby MultiExec.
+4. Restart Tabby if prompted.
 
-**Settings → Plugins**
-
-Locate:
-
-`multiexec`
-
-and install it.
-
-The npm package is:
-
-`tabby-multiexec`
-
-### Current Tabby plugin-search issue
-
-Some current Tabby releases have a broken or unreliable plugin search box.
-
-If searching for `multiexec` returns nothing, scroll through the plugin list
-until you find **multiexec**.
+Existing users can update through Tabby's plugin manager. The npm package is
+`tabby-multiexec`.
 
 ## Basic workflow
 
@@ -107,7 +94,7 @@ With several terminal sessions open:
 
 ### Excluding a terminal
 
-Each tiled terminal has an **Exclude** checkbox.
+While MultiExec is active, each participating terminal has an **Exclude** checkbox in its footer. Excluded terminals are indicated in amber.
 
 Checking Exclude immediately removes that terminal from broadcast output.
 
@@ -115,7 +102,7 @@ The checkbox can be changed dynamically while MultiExec remains active.
 
 ### Tile without MultiExec
 
-Use the **Tile** toolbar control to display all sessions together without
+Use the **Tiles** toolbar control to display all sessions together without
 broadcasting input.
 
 ### Return to tabs
@@ -126,15 +113,17 @@ original tab order.
 ### Copy terminal
 
 The **Copy** toolbar control copies the complete scrollback of the currently
-focused terminal to the system clipboard.
+focused terminal to the system clipboard as plain text, removing unnecessary
+trailing blank rows while preserving internal formatting. A confirmation appears
+beneath the Copy icon.
 
 ## Compatibility
 
 Validated with:
 
-- Tabby 1.0.235–1.0.236
-- Linux / Kubuntu
-- X11/XWayland-hosted Tabby
+- Tabby 1.0.236 and 1.0.238
+- Kubuntu / Ubuntu 26.04.1 LTS with KDE Plasma
+- Better Sidebar 1.0.11 tested alongside Tabby 1.0.238
 
 Other operating systems and Tabby versions may work but have not yet been
 formally validated.
@@ -147,7 +136,7 @@ https://www.npmjs.com/package/tabby-multiexec
 
 Current release:
 
-**1.0.3 — September 23, 2026**
+**1.0.4 — November 24, 2026**
 
 Release history and patch notes:
 

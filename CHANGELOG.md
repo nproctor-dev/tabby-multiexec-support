@@ -5,6 +5,31 @@ This file records the public release history of Tabby MultiExec.
 Release dates below are the dates the corresponding package versions became
 available through npm.
 
+## 1.0.4 — 2026-11-24
+
+### Added
+
+- Dedicated per-terminal Exclude footers, visible while MultiExec is enabled.
+- Green active MultiExec and amber excluded-terminal indicators.
+- Clipboard confirmation anchored beneath the Copy icon.
+
+### Changed
+
+- Redesigned toolbar icons, ordered MultiExec, Tabs, Tiles, Copy.
+- Simplified toolbar tooltips.
+- Copy produces clean plain text without unnecessary trailing blank rows,
+  preserving indentation, Unicode, and internal blank lines.
+
+### Fixed
+
+- Event-driven cleanup of terminal focus when returning to normal tabs.
+- Paste after tab restoration reaches only the selected terminal.
+- Repeated MultiExec activation and deactivation preserve correct input routing.
+
+### Compatibility
+
+- Qualified with Tabby 1.0.236 and 1.0.238 on Kubuntu / Ubuntu 26.04.1 LTS.
+
 ## 1.0.3 — 2026-09-23
 
 ### Fixed
